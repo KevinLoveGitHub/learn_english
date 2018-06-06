@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64cb9db7-7268-4220-9b90-0a442f4a3a1d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_english/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_english/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_english/spiders/getWord.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_english/spiders/getWord.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_english/word.db" beforeDir="false" afterPath="$PROJECT_DIR$/learn_english/word.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapinghub.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/learn_english$getWord.coverage" NAME="getWord Coverage Results" MODIFIED="1528278250949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_english" />
+    <SUITE FILE_PATH="coverage/learn_english$getWord.coverage" NAME="getWord Coverage Results" MODIFIED="1528281213357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_english" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -52,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getWord.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getWord.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn_english/spiders/getWord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="184">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -64,8 +59,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word" pinned="false" current-in-tab="true">
-        <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/word">
+      <file leaf-file-name="comment" pinned="false" current-in-tab="false">
+        <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/comment">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -77,7 +72,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d57d37e-1fb8-40a0-881a-7479373e0233/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -323,15 +318,16 @@
       <updated>1528105219660</updated>
       <workItem from="1528105221527" duration="4940000" />
       <workItem from="1528161395852" duration="22290000" />
-      <workItem from="1528261497194" duration="11752000" />
+      <workItem from="1528261497194" duration="14644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38982000" />
+    <option name="totallyTimeSpent" value="41874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -341,13 +337,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50061274" side_tool="true" weight="0.59375" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286638" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286638" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297414" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.36422414" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.3286638" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30575982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30575982" />
       <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.49938726" weight="0.59375" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1672794" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -369,12 +365,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -641,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_english/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -662,27 +661,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/word">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d57d37e-1fb8-40a0-881a-7479373e0233/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_english/spiders/getWord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="184">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/word">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
