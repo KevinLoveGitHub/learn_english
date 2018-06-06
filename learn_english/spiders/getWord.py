@@ -14,25 +14,30 @@ class GetwordSpider(scrapy.Spider):
         next_line = response.xpath('//span[@class="nav-next"]/a/@href').extract_first()
         word['nextLine'] = next_line
         word['comments'] = []
-        all_desc_text = response.xpath('//div[@class="dictionary-comment"]//text()')
+        last_sample_target = response.xpath('//p[@class="sample-target"][last()]/text()').extract_first().strip()
         all_text = response.xpath('//div[@class="entry-content"]//text()').extract()
+        all_desc = response.xpath('//div[@class="dictionary-comment"]//p[not(@class)]//text()').extract()
 
         for text in all_text:
+            # print('text', text)
             if '巧记：' in text or '注：' in text:
                 if len(text) > 3:
                     word['learn'] = text.strip().split('：', maxsplit=1)[1]
 
-        for desc_selector in all_desc_text:
-            desc_text = desc_selector.extract()
-            if len(desc_text.strip()) > 0 and desc_text.endswith('.'):
-                # print('desc_text', desc_selector.extract())
+            if len(text) > 1 and text.endswith('.') and text in all_desc:
                 comment = Comment()
-                comment['type'] = desc_text
-                desc_index = all_desc_text.index(desc_selector) + 1
-                comment['desc'] = all_desc_text[desc_index].extract()
+                comment['type'] = text
+                desc_index = all_text.index(text) + 1
+                comment['desc'] = all_text[desc_index]
+                print(comment['type'])
+                print(comment['desc'])
                 word['comments'].append(comment)
+
+        # 判断对象中是否存在元素
+        if word.get('learn') is None:
+            word['learn'] = last_sample_target
+
         # 如果使用管道， parse 必须返回要处理的数据
-        print(word)
         yield word
         if len(next_line):
             yield scrapy.Request(response.urljoin(next_line), self.parse)
