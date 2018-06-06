@@ -6,16 +6,22 @@ from learn_english.word import Word, Comment
 class GetwordSpider(scrapy.Spider):
     name = 'getWord'
     allowed_domains = ['qiaoyingyu123.com']
-    start_urls = ['http://qiaoyingyu123.com/?p=25']
+    start_urls = ['http://qiaoyingyu123.com/?p=380']
 
     def parse(self, response):
         word = Word()
-        word['word'] = response.xpath('//div[@class="entry-content"]/h3/text()').extract_first()
-        word['learn'] = response.xpath('//div[@class="dictionary-comment"]/p[last()]/text()').extract_first()
+        word['word'] = response.xpath('//h1[@class="entry-title"]/text()').extract_first()
         next_line = response.xpath('//span[@class="nav-next"]/a/@href').extract_first()
         word['nextLine'] = next_line
         word['comments'] = []
         myList = response.xpath('//div[@class="dictionary-comment"]//p')
+        all_text = response.xpath('//div[@class="entry-content"]//text()').extract()
+
+        for text in all_text:
+            if '巧记：' in text or '注：' in text:
+                if len(text) > 3:
+                    word['learn'] = text.strip().split('：', maxsplit=1)[1]
+
         for p in myList:
             if len(p.xpath('.//b').extract()) > 0:
                 comment = Comment()

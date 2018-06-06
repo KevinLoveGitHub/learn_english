@@ -52,3 +52,4 @@ class LearnEnglishPipeline(object):
             )
             sql = 'INSERT INTO comment VALUES(?,?,?,?)'
             self.db_cur.execute(sql, values)
+            self.db_conn.commit()
