@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/learn_english$getWord.coverage" NAME="getWord Coverage Results" MODIFIED="1528287518027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_english" />
+    <SUITE FILE_PATH="coverage/learn_english$getWord.coverage" NAME="getWord Coverage Results" MODIFIED="1528289450708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_english" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="getWord.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn_english/spiders/getWord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="434">
+              <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -104,6 +104,8 @@
       <find>process_item</find>
       <find>comment_id</find>
       <find>project</find>
+      <find>extract_</find>
+      <find>dictionary-comment</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -327,16 +329,15 @@
       <updated>1528105219660</updated>
       <workItem from="1528105221527" duration="4940000" />
       <workItem from="1528161395852" duration="22290000" />
-      <workItem from="1528261497194" duration="20624000" />
+      <workItem from="1528261497194" duration="22530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47854000" />
+    <option name="totallyTimeSpent" value="49760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -670,6 +671,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/word">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -677,10 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6d57d37e-1fb8-40a0-881a-7479373e0233/schema/main/table/comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file:///usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/parsel/selector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -693,8 +701,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_english/spiders/getWord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="434">
+          <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
