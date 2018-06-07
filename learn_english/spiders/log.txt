@@ -1,0 +1,290 @@
+2018-06-06 20:56:18 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: learn_english)
+2018-06-06 20:56:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (default, Mar 30 2018, 06:41:53) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-06-06 20:56:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'learn_english', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'learn_english.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['learn_english.spiders'], 'USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'}
+2018-06-06 20:56:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-06 20:56:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-06 20:56:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-06 20:56:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['learn_english.pipelines.LearnEnglishPipeline']
+2018-06-06 20:56:18 [scrapy.core.engine] INFO: Spider opened
+2018-06-06 20:56:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-06 20:56:18 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-06 20:56:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://qiaoyingyu123.com/robots.txt> (referer: None)
+2018-06-06 20:56:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://qiaoyingyu123.com/?p=144> (referer: None)
+2018-06-06 20:56:20 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '银行;\xa0（条形的）堆;\xa0（河的）岸;\xa0库存;\xa0', 'type': 'n.'},
+              {'desc': '堆积;\xa0筑（堤）;\xa0将（钱）存入银行;\xa0', 'type': 'vt.& vi.'},
+              {'desc': '（转弯时）倾斜飞行;\xa0（在某银行）开账户，存款;\xa0', 'type': 'vi.'},
+              {'desc': '（用煤等）封炉火;', 'type': 'vt.'}],
+ 'learn': '爸（ba）在河【岸]边的【银行】旁边开了一家耐克（nk）店。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=146',
+ 'word': 'bank'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/robots.txt> (referer: None)
+2018-06-06 20:56:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=146> (referer: http://qiaoyingyu123.com/?p=144)
+2018-06-06 20:56:22 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '条，棒;\xa0（门、窗等的）闩;\xa0障碍;\xa0酒吧间;\xa0', 'type': 'n.'},
+              {'desc': '闩（门等）;\xa0阻碍，封锁;\xa0排除，去除;\xa0', 'type': 'vt.'},
+              {'desc': '除…之外;', 'type': 'prep.'}],
+ 'learn': 'r的外形很像一朵小花。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=148',
+ 'word': 'bar'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=148> (referer: http://www.qiaoyingyu123.com/?p=146)
+2018-06-06 20:56:23 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '光秃秃的;\xa0（房间、柜子等）空的;\xa0赤裸的;\xa0刚好够的;\xa0', 'type': 'adj.'},
+              {'desc': '使赤裸;\xa0使露出;\xa0揭开;\xa0脱（衣服）;\xa0', 'type': 'vt.'}],
+ 'learn': 'b是baby的第一个字母，所以用b来代替男孩。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=150',
+ 'word': 'bare'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=150> (referer: http://www.qiaoyingyu123.com/?p=148)
+2018-06-06 20:56:24 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '基础;\xa0基地;\xa0根据;\xa0基数（如十进制的10 和二进制的2）;\xa0', 'type': 'n.'},
+              {'desc': '基于;\xa0把…建立在;\xa0把…放在或设在（基地）;\xa0把…置于底座（或基座）上;\xa0', 'type': 'vt.'},
+              {'desc': '卑鄙的;\xa0低级的;\xa0贱的，劣的;\xa0庶生的;', 'type': 'adj.'}],
+ 'learn': '爸（ba）以蛇（se）的话做【根据】。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=152',
+ 'word': 'base'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=152> (referer: http://www.qiaoyingyu123.com/?p=150)
+2018-06-06 20:56:25 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '基本的;\xa0[化学]碱性的;\xa0[地质学]基性的;\xa0首要的;\xa0', 'type': 'adj.'},
+              {'desc': '基础，基本;\xa0基本原则，基本原理，基本规律;\xa0要素;\xa0基础训练;\xa0', 'type': 'n.'}],
+ 'learn': '爸（ba）给了美女（s）一张IC（ic）卡，里面是一些【基本的】东西。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=155',
+ 'word': 'basic'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=155> (referer: http://www.qiaoyingyu123.com/?p=152)
+2018-06-06 20:56:26 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '沐浴;\xa0洗澡;\xa0浴缸，澡盆;\xa0浸，泡，洗澡水;\xa0', 'type': 'n.'},
+              {'desc': '（给…）洗澡;\xa0', 'type': 'vt.& vi.'}],
+ 'learn': '爸爸（ba）在天河（th）【洗澡】。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=157',
+ 'word': 'bath'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=157> (referer: http://www.qiaoyingyu123.com/?p=155)
+2018-06-06 20:56:27 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '给…洗澡，游泳;\xa0把…浸泡在液体中;\xa0（用海绵等）洗;\xa0把…弄湿，润湿;\xa0',
+ 'type': 'vt.& vi.'},
+              {'desc': '冲洗;\xa0浸;\xa0用水清洗（尤指身体部位）;\xa0（以光线）撒满;\xa0', 'type': 'vt.'},
+              {'desc': '游泳;\xa0<英>（在河，海中的）游泳;\xa0', 'type': 'n.'}],
+ 'learn': '‘【给】鹅（e）【洗澡】（bath）。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=159',
+ 'word': 'bathe'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=159> (referer: http://www.qiaoyingyu123.com/?p=157)
+2018-06-06 20:56:28 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '湾，海湾;\xa0犬吠声;\xa0月桂树;\xa0吊窗，凸窗;\xa0', 'type': 'n.'},
+              {'desc': '（尤指猎犬等）吠，叫，咆哮;\xa0筑堤遏（水）;\xa0穷追，使陷入绝境;\xa0阻止（敌人）不使前进;\xa0',
+ 'type': 'vi.'},
+              {'desc': '赤褐色的，栗色的;\xa0', 'type': 'adj.'},
+              {'desc': '向…吠叫;\xa0', 'type': 'vt.'}],
+ 'learn': '爸爸（ba）抱着一根树丫（y）在【海湾】里漂泊。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=161',
+ 'word': 'bay'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=161> (referer: http://www.qiaoyingyu123.com/?p=159)
+2018-06-06 20:56:29 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '熊;\xa0（在证券市场等）卖空的人;\xa0蛮横的人;\xa0', 'type': 'n.'},
+              {'desc': '忍受;\xa0承担;\xa0支撑;\xa0生育;\xa0', 'type': 'vt.'},
+              {'desc': '生（孩子）;\xa0结（果实）;\xa0与…有关;\xa0', 'type': 'vi.'},
+              {'desc': '跌价的;\xa0股票行情下跌的;\xa0卖空者的;\xa0', 'type': 'adj.'}],
+ 'learn': '男孩（b）把耳朵（ear）贴在【熊】肚子上听，熊感到【负担】很重。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=163',
+ 'word': 'bear'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=163> (referer: http://www.qiaoyingyu123.com/?p=161)
+2018-06-06 20:56:30 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '美丽的，美好的;\xa0极好的', 'type': 'adj.'}],
+ 'learn': '这是（be）用金子（au）做的伞（t），我（i）服了(ful)，真是太【漂亮】了。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=165',
+ 'word': 'beautiful'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=165> (referer: http://www.qiaoyingyu123.com/?p=163)
+2018-06-06 20:56:30 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '因为;\xa0', 'type': 'conj.'}],
+ 'learn': '【因为】这是（be）把钙（ca）拿去使用（use），所以他们才会强壮。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=167',
+ 'word': 'because'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=167> (referer: http://www.qiaoyingyu123.com/?p=165)
+2018-06-06 20:56:31 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '变为，成为;\xa0变得;\xa0变成;\xa0', 'type': 'vi.'},
+              {'desc': '适合，适宜;\xa0相称，相当;\xa0变成;\xa0发生;\xa0', 'type': 'vt.'}],
+ 'learn': '联想路途非常的远，他跑了好几年，所以才成了长跑健将。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=169',
+ 'word': 'become'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=169> (referer: http://www.qiaoyingyu123.com/?p=167)
+2018-06-06 20:56:32 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '床;\xa0苗圃;\xa0河床;\xa0（地下由黏土、岩石等构成的）地层;\xa0', 'type': 'n.'},
+              {'desc': '把…固定在;\xa0（某人）发生性关系;\xa0给人铺床;\xa0', 'type': 'vt.'},
+              {'desc': '上床;\xa0分层;\xa0', 'type': 'vi.'}],
+ 'learn': '狗dog的第一个字母是d,所以用d 来代替狗。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=171',
+ 'word': 'bed'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=171> (referer: http://www.qiaoyingyu123.com/?p=169)
+2018-06-06 20:56:33 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '蜜蜂;\xa0（集工作、竞赛、娱乐为一体的）聚会', 'type': 'n.'}],
+ 'learn': '男孩（b）的眼睛（ee）被【蜜蜂】蜇了。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=173',
+ 'word': 'bee'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=173> (referer: http://www.qiaoyingyu123.com/?p=171)
+2018-06-06 20:56:34 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '牛肉;\xa0菜牛（饲养以供肉食的牛）;\xa0体力;\xa0怨言，牢骚;\xa0', 'type': 'n.'},
+              {'desc': '抱怨，大发牢骚;', 'type': 'vi.'}],
+ 'learn': '蜜蜂（bee）飞（f）到了【牛肉】上。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=175',
+ 'word': 'beef'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:35 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2018-06-06 20:56:35 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-06-06 20:56:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qiaoyingyu123.com/?p=175> (referer: http://www.qiaoyingyu123.com/?p=173)
+2018-06-06 20:56:35 [scrapy.core.scraper] ERROR: Error processing {'comments': [{'desc': '啤酒，麦酒;\xa0（一般）发酵饮料;\xa0[印，纺]比尔;', 'type': 'n.'}],
+ 'learn': '蜜蜂（bee）把采到的花（r）放到了【啤酒】里。',
+ 'nextLine': 'http://www.qiaoyingyu123.com/?p=177',
+ 'word': 'beer'}
+Traceback (most recent call last):
+  File "/Users/Kevin/IDEAProjects/python/learn_english/venv/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 28, in process_item
+    self.insert_db(item)
+  File "/Users/Kevin/IDEAProjects/python/learn_english/learn_english/pipelines.py", line 40, in insert_db
+    self.db_cur.execute(sql, values)
+sqlite3.OperationalError: no such table: word
+2018-06-06 20:56:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8798,
+ 'downloader/request_count': 18,
+ 'downloader/request_method_count/GET': 18,
+ 'downloader/response_bytes': 140548,
+ 'downloader/response_count': 18,
+ 'downloader/response_status_count/200': 18,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 6, 6, 12, 56, 35, 485462),
+ 'log_count/DEBUG': 19,
+ 'log_count/ERROR': 16,
+ 'log_count/INFO': 8,
+ 'memusage/max': 49913856,
+ 'memusage/startup': 49909760,
+ 'request_depth_max': 16,
+ 'response_received_count': 18,
+ 'scheduler/dequeued': 16,
+ 'scheduler/dequeued/memory': 16,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 6, 6, 12, 56, 18, 657521)}
+2018-06-06 20:56:35 [scrapy.core.engine] INFO: Spider closed (shutdown)
